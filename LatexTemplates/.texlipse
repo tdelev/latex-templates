@@ -1,14 +1,14 @@
 #TeXlipse project settings
-#Tue Jun 05 11:32:58 CEST 2012
+#Tue Jun 05 12:09:05 CEST 2012
 markTmpDer=true
 builderNum=2
-outputDir=out
+outputDir=out/
 makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=tmp
-mainTexFile=document.tex
-outputFile=document.pdf
+mainTexFile=slide.tex
+outputFile=slide.pdf
 langSpell=en
 markDer=true
-srcDir=
+srcDir=presentation2

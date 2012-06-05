@@ -1,0 +1,53 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%% Content starts here %%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{frame}{ 
+%Slide title%
+}
+%Slide content
+%Example list
+\begin{itemize}
+  \item \texttt{strcpy} - копирање на една текстуална низа во друга
+  \item \texttt{strncpy} - копирање на n бајти во тесктуална низа, се
+  копираат од \texttt{src} или се додаваат \texttt{nulls}
+  \item \texttt{strcat} - додава една текстуална низа на крајот на друга
+  \item \texttt{strncat} - додава n бајти од една текстуална низа во друга
+\end{itemize}
+\end{frame}
+
+
+\begin{frame}[fragile]{
+%Example slide with source code
+}{
+%Subtitle
+}
+\begin{lstlisting}
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+#define MAX 100
+
+void trim(char *s) {
+    char *d = s;
+    while (isspace(*s++))
+        ;
+    s--;
+    while (*d++ = *s++)
+        ;
+    d--;
+    while (isspace(*--d))
+        *d = 0;
+}
+int main() {
+    char s[MAX];
+    printf("Vnesete string: ");
+    gets(s);
+    printf("[%s] -> ", s);
+    trim(s);
+    printf("[%s]", s);
+    return 0;
+}
+\end{lstlisting}
+\end{frame}
